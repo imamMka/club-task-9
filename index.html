@@ -8,15 +8,14 @@
     <title>Document</title>
     <style>
         .input-container {
-            visibility: hidden;
             width: 0;
             padding: 0;
+            overflow: hidden;
             transition: all 300ms ease;
         }
 
         .active {
-            visibility: visible;
-            width: auto;
+            width: 360px;
             padding: 12px;
         }
     </style>
@@ -38,7 +37,7 @@
             </div>
 
             <div class="bg-white w-fit h-15 rounded-2xl mt-30 p-4 flex items-center ">
-                <div class="input-container">
+                <div class="input-container flex items-center">
                     <input type="search" name="" id="" class="bg-white w-fill h-15 rounded-2xl p-3"
                         placeholder="Search Our Product Here">
                     <button class="bg-black text-white py-2 px-5 rounded-xl cursor-pointer">Search</button>
